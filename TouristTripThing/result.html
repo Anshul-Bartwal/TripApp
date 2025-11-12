@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Travel Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="page-container">
+  
+  <h2 id="cityName"></h2>
+  <img id="cityImg" class="city-img">
+
+  <div class="result-card">
+    <h3>Suggested Itinerary</h3>
+    <p id="itinerary"></p>
+  </div>
+
+  <div class="result-card">
+    <h3>Calm Travel Tip</h3>
+    <p id="tip"></p>
+  </div>
+
+  <div class="chatbox">
+    <h3>Your Travel Guide</h3>
+    <div id="chatWindow" class="chat-window"></div>
+
+    <div class="chat-input-wrap">
+      <input id="chatInput" class="chat-input" placeholder="Ask something...">
+      <button class="main-btn small-btn" onclick="chat()">Send</button>
+    </div>
+  </div>
+
+  <button class="main-btn" onclick="window.location.href='index.html'">Plan Another Trip</button>
+</div>
+</body>
+</html>
