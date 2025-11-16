@@ -110,8 +110,7 @@ const localPlaces = {
       name: "Naini Lake",
       description: "The heart of Nainital — surrounded by hills, perfect for a scenic boat ride.",
       images: [
-        "https://images.unsplash.com/photo-1617127262655-6fc6f2c1a1f2?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1602570126460-f35f5f97a485?auto=format&fit=crop&w=900&q=80"
+
       ],
       bestTime: "March – October",
       entryFee: "₹100 (boating)",
