@@ -1,4 +1,5 @@
 import { Modal } from "./Modal.jsx";
+import { Chat } from "../chat/Chat.jsx";
 
 import { useState, useEffect } from "react"
 import axios from "axios";
@@ -7,10 +8,15 @@ import './destinationInfo.css';
 export function DestinationInfo() {
     const [placesData, setPlacesData] = useState([]);
     const [ loadModal, setLoadModal ] = useState(false);
-    const [place, setPlace ] = useState("Nainital");
+    const [place, setPlace ] = useState("");
+    const [ showChat, setShowChat ] = useState(false);
+    const [ tripContextAi, setTripContextAi ] = useState({});
+
     useEffect(() => {
         const tripContext = JSON.parse(localStorage.getItem('tripDetails'));
+        
         // console.log(tripContext);
+        
 
         const showDestinationInfo = async (destination) => {
             // const cardGrid = document.getElementById("place-cards");
@@ -22,6 +28,7 @@ export function DestinationInfo() {
                 const response = await axios.post('/api/generatePlaces', { destination });
                 console.log("Received response:", response.data);
                 setPlacesData((r) => { r = response.data; return r; })
+                setTripContextAi(tripContext);
                 // console.log("placesData = ", placesData);
 
             } catch (err) {
@@ -32,6 +39,7 @@ export function DestinationInfo() {
         showDestinationInfo(tripContext.destination);
 
     }, []);
+
 
 
 
@@ -94,7 +102,7 @@ export function DestinationInfo() {
                 </div>
 
                 {loadModal && place && <Modal place={place} setPlace={setPlace}/>}       
-                <div id="place-info" hidden>
+                {/* <div id="place-info" hidden>
                     <h2 id="place-name"></h2>
                     <p id="place-description"></p>
                     <p><strong>Best Time:</strong> <span id="place-besttime"></span></p>
@@ -103,11 +111,15 @@ export function DestinationInfo() {
                     <p><strong>Location:</strong> <span id="place-location"></span></p>
 
                     <button id="chat-about-btn" className="main-btn">💬 Ask AI About This Place</button>
-                </div>
+                </div> */}
             </section>
 
                 
-            <button id="chat-toggle">💬 Ask AI</button>
+            {showChat ? 
+                ( <Chat setShowChat={setShowChat} tripContext={tripContextAi} />)
+                :( <button id="chat-toggle" onClick={() => {setShowChat(true)}}>💬 Ask AI</button>
+                )
+  }
         </>
     )
 }
