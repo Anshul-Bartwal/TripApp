@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uttarakhand Travel Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+
+<body class="hero-bg">
+  <!-- HERO / LANDING -->
+  <div class="overlay" id="landing">
+    <div class="home-container">
+      <h1>Explore Uttarakhand</h1>
+      <p>Your personal travel companion for mountains, rivers & peace.</p>
+      <button id="start-btn" class="main-btn">Start Planning</button>
+    </div>
+  </div>
+
+  <!-- TRIP SETUP -->
+  <section id="trip-setup" class="hidden">
+    <h1>Plan Your Trip</h1>
+    <form id="trip-form">
+      <label>Choose Destination:</label>
+      <select id="destination" required>
+        <option value="">Select</option>
+        <option>Dehradun</option>
+        <option>Rishikesh</option>
+        <option>Nainital</option>
+      </select>
+
+      <label>Trip Type:</label>
+      <select id="trip-type">
+        <option>Adventure</option>
+        <option>Spiritual</option>
+        <option>Family</option>
+        <option>Solo</option>
+      </select>
+
+      <label>Budget Range (₹):</label>
+      <select id="budget">
+        <option>5000-10000</option>
+        <option>10000-20000</option>
+        <option>20000-40000</option>
+        <option>40000+</option>
+      </select>
+
+      <label>Trip Duration:</label>
+      <select id="duration">
+        <option>Weekend</option>
+        <option>3–5 days</option>
+        <option>Week-long</option>
+      </select>
+
+      <button type="submit">Continue →</button>
+    </form>
+  </section>
+
+  <!-- DESTINATION INFO -->
+<section id="destination-info" class="hidden">
+  <div class="info-header">
+    <h1 id="place-title">Top Tourist Spots</h1>
+    <p id="place-desc">Select a destination to explore the top attractions!</p>
+  </div>
+
+  <div class="destination-layout">
+    <!-- Left: Photo Display Card -->
+    <div id="photo-viewer" class="photo-card hidden">
+      <button class="slide-btn" id="prev-img">‹</button>
+      <img id="viewer-img" src="" alt="Tourist Spot">
+      <button class="slide-btn" id="next-img">›</button>
+      <p id="photo-caption"></p>
+    </div>
+
+    <!-- Right: Tourist Spots -->
+    <div id="place-cards" class="card-grid"></div>
+  </div>
+
+  <div id="place-info" class="hidden">
+    <h2 id="place-name"></h2>
+    <p id="place-description"></p>
+    <p><strong>Best Time:</strong> <span id="place-besttime"></span></p>
+    <p><strong>Entry Fee:</strong> <span id="place-entry"></span></p>
+    <p><strong>Timings:</strong> <span id="place-timings"></span></p>
+    <p><strong>Location:</strong> <span id="place-location"></span></p>
+
+    <button id="chat-about-btn" class="main-btn">💬 Ask AI About This Place</button>
+  </div>
+</section>
+
+
+  <!-- CHAT -->
+  <button id="chat-toggle" class="hidden">💬 Ask AI</button>
+
+  <div id="chat-container" class="hidden">
+    <div id="chat-header">
+      <span>Travel Assistant</span>
+      <button id="close-chat">✖</button>
+    </div>
+    <div id="chat-box"></div>
+    <div id="chat-input-area">
+      <input type="text" id="user-input" placeholder="Ask about places..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+<!-- Place Modal -->
+<div id="place-modal" class="hidden">
+  <div class="modal-content">
+    <div class="photo-side">
+      <button id="prev-img" class="slide-btn">‹</button>
+      <img id="modal-img" src="" alt="Tourist Place" />
+      <button id="next-img" class="slide-btn">›</button>
+    </div>
+
+    <div class="info-side">
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+
+      <div id="modal-details"></div>
+
+      <button id="chat-about-btn" class="main-btn">💬 Ask AI About This Place</button>
+      <button id="close-modal" class="close-btn">✖ Close</button>
+    </div>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
