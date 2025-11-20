@@ -25,9 +25,7 @@ const localPlaces = {
       name: "Robber's Cave (Guchhupani)",
       description: "A natural cave formation where a river flows through — perfect for adventure lovers.",
       images: [
-        "https://images.unsplash.com/photo-1617814198890-88b1ebf43c44?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1622925091532-1e6924c2a90b?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1632687248589-268e2e1d0020?auto=format&fit=crop&w=900&q=80"
+        "https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/12/Robbers-Caves-Cover-Photo-840x425.jpg"
       ],
       bestTime: "March – June",
       entryFee: "₹25",
@@ -39,8 +37,7 @@ const localPlaces = {
       name: "Sahastradhara",
       description: "Known for its sulphur springs and waterfalls, offering scenic beauty and therapeutic benefits.",
       images: [
-        "https://images.unsplash.com/photo-1625049109689-3fa7db01a46f?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=900&q=80"
+        "https://dehraduntourism.co.in/images/places-to-visit/header/sahastradhara-dehradun-tourism-entry-fee-timings-holidays-reviews-header.jpg"
       ],
       bestTime: "February – June",
       entryFee: "Free",
@@ -52,8 +49,7 @@ const localPlaces = {
       name: "Mindrolling Monastery",
       description: "One of India’s largest Buddhist centers, featuring a 60m stupa and serene gardens.",
       images: [
-        "https://images.unsplash.com/photo-1624024993531-fc40f334d23f?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1636629342884-7b994747f48d?auto=format&fit=crop&w=900&q=80"
+        "https://dehraduntourism.co.in/images/places-to-visit/header/mindrolling-monastery-dehradun-tourism-entry-fee-timings-holidays-reviews-header.jpg",
       ],
       bestTime: "All year",
       entryFee: "Free",
@@ -68,8 +64,7 @@ const localPlaces = {
       name: "Lakshman Jhula",
       description: "Iconic suspension bridge across the Ganga River with stunning views.",
       images: [
-        "https://images.unsplash.com/photo-1608897013039-59e9e1e1fdbf?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1608877908955-3d439a2e778a?auto=format&fit=crop&w=900&q=80"
+        "https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"
       ],
       bestTime: "October – March",
       entryFee: "Free",
@@ -81,8 +76,7 @@ const localPlaces = {
       name: "Neer Garh Waterfall",
       description: "Hidden gem with turquoise pools — perfect for trekking and nature photography.",
       images: [
-        "https://images.unsplash.com/photo-1617711426155-3e5c8ee806d1?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1605733160314-4f2b6fc9e2f1?auto=format&fit=crop&w=900&q=80"
+        "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2F1721977393875_Neer%20Garh%20Waterfall%203.jpg&w=3840&q=75"
       ],
       bestTime: "March – June",
       entryFee: "₹30",
@@ -94,8 +88,7 @@ const localPlaces = {
       name: "Triveni Ghat",
       description: "Spiritual heart of Rishikesh — known for its serene Ganga Aarti ceremony.",
       images: [
-        "https://images.unsplash.com/photo-1618172197460-c4bb65450f9e?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1631190115372-6bfcdd4f67e1?auto=format&fit=crop&w=900&q=80"
+        "https://apnayatra.com/wp-content/uploads/2024/05/Triveni-Ghat-Rishikesh.jpg"
       ],
       bestTime: "All year",
       entryFee: "Free",
@@ -110,7 +103,7 @@ const localPlaces = {
       name: "Naini Lake",
       description: "The heart of Nainital — surrounded by hills, perfect for a scenic boat ride.",
       images: [
-
+        "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRBeh9Nzr0PqOUdW-pP2qQBm-VQ-8DeuXm7WWsRPdMmK3TwoUAp560akMfGNwriXezyy7uBs51H_kZlSthKok8OsL4&s=19"
       ],
       bestTime: "March – October",
       entryFee: "₹100 (boating)",
@@ -122,8 +115,8 @@ const localPlaces = {
       name: "Tiffin Top",
       description: "A 360° viewpoint of the Nainital valley — ideal for nature lovers and photographers.",
       images: [
-        "https://images.unsplash.com/photo-1616309663199-2cb4e34f64b5?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1615919966212-5737de8304b9?auto=format&fit=crop&w=900&q=80"
+        "https://media.holidify.com/images/cmsuploads/compressed/image-24-1024x684_20241205173600.jpg"
+
       ],
       bestTime: "October – June",
       entryFee: "Free",

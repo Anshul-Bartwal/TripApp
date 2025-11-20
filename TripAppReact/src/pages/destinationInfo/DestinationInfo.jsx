@@ -81,8 +81,9 @@ export function DestinationInfo() {
                                     
 
                                     <div className="place-card" data-index={i} key={i} onClick={() => showModal(p)}>
+                                        {console.log(p.images[0])}
                                         <img
-                                            src={`${p.images?.[0] || p.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80'}`}
+                                            src={p.images[0] || `https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80`}
                                             alt={p.name}
                                             referrerPolicy="no-referrer"
                                         />
@@ -101,17 +102,7 @@ export function DestinationInfo() {
                     </div>
                 </div>
 
-                {loadModal && place && <Modal place={place} setPlace={setPlace}/>}       
-                {/* <div id="place-info" hidden>
-                    <h2 id="place-name"></h2>
-                    <p id="place-description"></p>
-                    <p><strong>Best Time:</strong> <span id="place-besttime"></span></p>
-                    <p><strong>Entry Fee:</strong> <span id="place-entry"></span></p>
-                    <p><strong>Timings:</strong> <span id="place-timings"></span></p>
-                    <p><strong>Location:</strong> <span id="place-location"></span></p>
-
-                    <button id="chat-about-btn" className="main-btn">💬 Ask AI About This Place</button>
-                </div> */}
+                {loadModal && place && <Modal place={place} setPlace={setPlace} setShowChat={setShowChat} />}       
             </section>
 
                 
