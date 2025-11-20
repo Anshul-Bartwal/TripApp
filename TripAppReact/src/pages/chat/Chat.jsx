@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import {  useEffect, useState,useRef } from "react";
 import axios from "axios";
 import { Message } from "./Message.jsx";
 export function Chat({ setShowChat,tripContextAi }) {
@@ -13,9 +13,12 @@ export function Chat({ setShowChat,tripContextAi }) {
 
     const [ inputMessage, setInputMessage ] = useState("");
 
-
+    const chatBoxRef = useRef(null);
     useEffect(() =>{
         localStorage.setItem("chatMessages", JSON.stringify(messages));
+        if(chatBoxRef.current){
+            chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+        }
     },[messages]);
 
 
@@ -56,7 +59,7 @@ export function Chat({ setShowChat,tripContextAi }) {
                 <span>Travel Assistant</span>
                 <button id="close-chat" onClick={() => setShowChat(false)}>✖</button>
             </div>
-            <div id="chat-box">
+            <div id="chat-box" ref={chatBoxRef}>
                 {messages.map((message,index) => {
                     return (<Message message={message} key={index} />)
                 })}
