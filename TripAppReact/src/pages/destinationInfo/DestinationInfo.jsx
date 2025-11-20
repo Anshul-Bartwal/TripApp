@@ -101,7 +101,7 @@ export function DestinationInfo() {
                     </div>
                 </div>
 
-                {loadModal && place && <Modal place={place} setPlace={setPlace}/>}       
+                {loadModal && place && <Modal place={place} setPlace={setPlace} setShowChat={setShowChat} />}       
                 {/* <div id="place-info" hidden>
                     <h2 id="place-name"></h2>
                     <p id="place-description"></p>
