@@ -64,8 +64,7 @@ const localPlaces = {
       name: "Lakshman Jhula",
       description: "Iconic suspension bridge across the Ganga River with stunning views.",
       images: [
-        "https://images.unsplash.com/photo-1608897013039-59e9e1e1fdbf?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1608877908955-3d439a2e778a?auto=format&fit=crop&w=900&q=80"
+        "https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"
       ],
       bestTime: "October – March",
       entryFee: "Free",
@@ -77,8 +76,7 @@ const localPlaces = {
       name: "Neer Garh Waterfall",
       description: "Hidden gem with turquoise pools — perfect for trekking and nature photography.",
       images: [
-        "https://images.unsplash.com/photo-1617711426155-3e5c8ee806d1?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1605733160314-4f2b6fc9e2f1?auto=format&fit=crop&w=900&q=80"
+        "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2F1721977393875_Neer%20Garh%20Waterfall%203.jpg&w=3840&q=75"
       ],
       bestTime: "March – June",
       entryFee: "₹30",
@@ -90,8 +88,7 @@ const localPlaces = {
       name: "Triveni Ghat",
       description: "Spiritual heart of Rishikesh — known for its serene Ganga Aarti ceremony.",
       images: [
-        "https://images.unsplash.com/photo-1618172197460-c4bb65450f9e?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1631190115372-6bfcdd4f67e1?auto=format&fit=crop&w=900&q=80"
+        "https://apnayatra.com/wp-content/uploads/2024/05/Triveni-Ghat-Rishikesh.jpg"
       ],
       bestTime: "All year",
       entryFee: "Free",
@@ -106,7 +103,7 @@ const localPlaces = {
       name: "Naini Lake",
       description: "The heart of Nainital — surrounded by hills, perfect for a scenic boat ride.",
       images: [
-
+        "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRBeh9Nzr0PqOUdW-pP2qQBm-VQ-8DeuXm7WWsRPdMmK3TwoUAp560akMfGNwriXezyy7uBs51H_kZlSthKok8OsL4&s=19"
       ],
       bestTime: "March – October",
       entryFee: "₹100 (boating)",
@@ -118,8 +115,8 @@ const localPlaces = {
       name: "Tiffin Top",
       description: "A 360° viewpoint of the Nainital valley — ideal for nature lovers and photographers.",
       images: [
-        "https://images.unsplash.com/photo-1616309663199-2cb4e34f64b5?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1615919966212-5737de8304b9?auto=format&fit=crop&w=900&q=80"
+        "https://media.holidify.com/images/cmsuploads/compressed/image-24-1024x684_20241205173600.jpg"
+
       ],
       bestTime: "October – June",
       entryFee: "Free",
