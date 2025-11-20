@@ -25,9 +25,7 @@ const localPlaces = {
       name: "Robber's Cave (Guchhupani)",
       description: "A natural cave formation where a river flows through — perfect for adventure lovers.",
       images: [
-        "https://images.unsplash.com/photo-1617814198890-88b1ebf43c44?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1622925091532-1e6924c2a90b?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1632687248589-268e2e1d0020?auto=format&fit=crop&w=900&q=80"
+        "https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/12/Robbers-Caves-Cover-Photo-840x425.jpg"
       ],
       bestTime: "March – June",
       entryFee: "₹25",
@@ -39,8 +37,7 @@ const localPlaces = {
       name: "Sahastradhara",
       description: "Known for its sulphur springs and waterfalls, offering scenic beauty and therapeutic benefits.",
       images: [
-        "https://images.unsplash.com/photo-1625049109689-3fa7db01a46f?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=900&q=80"
+        "https://dehraduntourism.co.in/images/places-to-visit/header/sahastradhara-dehradun-tourism-entry-fee-timings-holidays-reviews-header.jpg"
       ],
       bestTime: "February – June",
       entryFee: "Free",
@@ -52,8 +49,7 @@ const localPlaces = {
       name: "Mindrolling Monastery",
       description: "One of India’s largest Buddhist centers, featuring a 60m stupa and serene gardens.",
       images: [
-        "https://images.unsplash.com/photo-1624024993531-fc40f334d23f?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1636629342884-7b994747f48d?auto=format&fit=crop&w=900&q=80"
+        "https://dehraduntourism.co.in/images/places-to-visit/header/mindrolling-monastery-dehradun-tourism-entry-fee-timings-holidays-reviews-header.jpg",
       ],
       bestTime: "All year",
       entryFee: "Free",

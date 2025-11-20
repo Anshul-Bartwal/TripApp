@@ -4,11 +4,10 @@ import { Message } from "./Message.jsx";
 export function Chat({ setShowChat,tripContextAi }) {
     const [ messages,setMessages ] = useState(() => {
         const storedMessages = localStorage.getItem("chatMessages");
-        console.log(`storedmessage: ${storedMessages}`);
-        return storedMessages ? JSON.parse(storedMessages) : [{
-            message: `Hey! Planning your trip? Ask me anything!`,
-            sender: "bot"
-        }];
+            return storedMessages ? JSON.parse(storedMessages) : [{
+                message: `Hey! Planning your trip? Ask me anything!`,
+                sender: "bot"
+            }];
     });
 
     const [ inputMessage, setInputMessage ] = useState("");
@@ -45,7 +44,6 @@ export function Chat({ setShowChat,tripContextAi }) {
     }
 
     function addMessage(sender, text) {
-        // chatBox.scrollTop = chatBox.scrollHeight;
         if(text.trim() === ""){
             return;
         }
