@@ -1,38 +1,24 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import axios from "axios";
 import { Message } from "./Message.jsx";
 export function Chat({ setShowChat,tripContextAi }) {
-    // const [ greeted, setGreeted ] = useState(false);
-    const [ messages,setMessages ] = useState([{
-        message: `Hey! Planning your trip? Ask me anything!`,
-        sender: "bot"
-    }]);
+    const [ messages,setMessages ] = useState(() => {
+        const storedMessages = localStorage.getItem("chatMessages");
+        console.log(`storedmessage: ${storedMessages}`);
+        return storedMessages ? JSON.parse(storedMessages) : [{
+            message: `Hey! Planning your trip? Ask me anything!`,
+            sender: "bot"
+        }];
+    });
 
     const [ inputMessage, setInputMessage ] = useState("");
 
 
-    
-    // chatToggle.addEventListener("click", () => {
-    //     chatContainer.classList.remove("hidden");
-    //     chatContainer.classList.add("active");
-    //     chatToggle.classList.add("hidden");
+    useEffect(() =>{
+        localStorage.setItem("chatMessages", JSON.stringify(messages));
+    },[messages]);
 
-    //     if (!chatBox.dataset.greeted) {
-    //         addMessage("bot", `Hey! Planning your ${tripContext.type} trip to ${tripContext.destination}? Ask me anything!`);
-    //         chatBox.dataset.greeted = "true";
-    //     }
-    // });
 
-    // closeChat.addEventListener("click", () => {
-    //     chatContainer.classList.remove("active");
-    //     chatContainer.classList.add("hidden");
-    //     chatToggle.classList.remove("hidden");
-    // });
-
-    // sendBtn.addEventListener("click", sendMessage);
-    // userInput.addEventListener("keypress", (e) => {
-    //     if (e.key === "Enter") sendMessage();
-    // });
     const removeMessage = () => {
         setMessages((m) => {return m.slice(0,-1);});
     } 
@@ -50,15 +36,16 @@ export function Chat({ setShowChat,tripContextAi }) {
             addMessage("bot", response.data.reply);
         } catch (err) {
             console.error(err);
+            removeMessage();
             addMessage("bot", "Error connecting to AI.");
         }
     }
 
     function addMessage(sender, text) {
-        // msg.classList.add("message", sender);
-        // msg.innerHTML = text;
-        // chatBox.appendChild(msg);
         // chatBox.scrollTop = chatBox.scrollHeight;
+        if(text.trim() === ""){
+            return;
+        }
         setMessages((m) => [...m, {message: text, sender: sender}]);
         setInputMessage("");
     }

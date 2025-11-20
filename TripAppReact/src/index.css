@@ -301,11 +301,13 @@ body {
   background: #e0f7fa;
   text-align: right;
   align-self: flex-end;
+  color: hsl(213, 10%, 21%);
 }
 
 .bot {
   background: #f1f1f1;
   align-self: flex-start;
+  color: hsl(213, 10%, 21%);
 }
 
 #chat-input-area {

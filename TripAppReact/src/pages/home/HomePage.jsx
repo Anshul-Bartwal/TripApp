@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { TripSetup } from './TripSetup';
 export function HomePage() {
     const [ showing,setShowing ] =  useState("overlay");
+    localStorage.clear();
     function handleStartPlanning(){
         setShowing("trip-setup");
     }
