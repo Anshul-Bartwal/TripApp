@@ -19,9 +19,9 @@ html, body {
    BACKGROUND IMAGE FIX (NO STRETCH)
 --------------------------------*/
 body {
-  background: url("/bg.jpg") center center / cover no-repeat fixed;
+  background: url("assets/Bugyal.webp") center center / cover no-repeat fixed;
   /* makes tall images shrink to fit */
-  background-size: contain;
+  background-size: fill;
   background-color: #000;
   background-attachment: fixed;
 }
