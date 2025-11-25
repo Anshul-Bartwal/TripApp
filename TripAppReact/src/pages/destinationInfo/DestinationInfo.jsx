@@ -63,12 +63,12 @@ export function DestinationInfo() {
                 </div>
 
                 <div className="destination-layout">
-                    <div id="photo-viewer" className="photo-card hidden">
+                    {/* <div id="photo-viewer" className="photo-card hidden">
                         <button className="slide-btn" id="prev-img">‹</button>
                         <img id="viewer-img" alt="Tourist Spot" />
                         <button className="slide-btn" id="next-img">›</button>
                         <p id="photo-caption"></p>
-                    </div>
+                    </div> */}
 
                     <div id="place-cards" className="card-grid">
                         {placesData.length === 0 ? (
@@ -81,7 +81,6 @@ export function DestinationInfo() {
                                     
 
                                     <div className="place-card" data-index={i} key={i} onClick={() => showModal(p)}>
-                                        {console.log(p.images[0])}
                                         <img
                                             src={p.images[0] || `https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80`}
                                             alt={p.name}

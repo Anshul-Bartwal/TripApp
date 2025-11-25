@@ -1,50 +1,97 @@
+#destination-info {
+  padding: 40px;
+  backdrop-filter: blur(5px);
+}
+
+.info-header {
+  text-align: center;
+}
+
+.info-header h1 {
+  font-size: 2.6rem;
+}
+
+.info-header p {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
 .destination-layout {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
-  width: 100vw;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 30px;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .place-card {
-  background: #fff;
-  border-radius: 1rem;
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.place-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
 }
 
 .place-card img {
   width: 100%;
-  height: 200px;
+  height: 170px;
   object-fit: cover;
 }
 
 .place-card .info {
-  padding: 1rem;
-  text-align: left;
+  padding: 12px;
 }
 
-.place-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+
+#place-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.place-card p {
-  font-size: 0.9rem;
-  color: #555;
+.modal-content {
+  display: flex;
+  gap: 25px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 25px;
+  max-width: 900px;
+}
+
+.photo-side {
+  position: relative;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00000098;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+#prev-img { left: 10px; }
+#next-img { right: 10px; }
+
+#modal-img {
+  width: 330px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-side {
+  max-width: 450px;
 }

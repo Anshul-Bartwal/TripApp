@@ -1,6 +1,7 @@
 import {  useEffect, useState,useRef } from "react";
 import axios from "axios";
 import { Message } from "./Message.jsx";
+import './chat.css';
 export function Chat({ setShowChat,tripContextAi }) {
     const [ messages,setMessages ] = useState(() => {
         const storedMessages = localStorage.getItem("chatMessages");
