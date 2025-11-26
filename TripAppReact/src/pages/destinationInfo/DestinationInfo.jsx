@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import axios from "axios";
 
 import './destinationInfo.css';
+import { Header } from "../header/header.jsx";
 export function DestinationInfo() {
     const [placesData, setPlacesData] = useState([]);
     const [ loadModal, setLoadModal ] = useState(false);
@@ -54,6 +55,7 @@ export function DestinationInfo() {
 
     return (
         <>
+            <Header />
             <section id="destination-info">
 
 
