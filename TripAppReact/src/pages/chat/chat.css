@@ -6,9 +6,16 @@
   background: #00c6ff;
   color: black;
   border-radius: 50px;
+  border:none;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out,box-shadow 0.25s ease-in-out;
+  box-shadow: 0 5px 6px hsla(0, 0%, 0%, 0.787);
 }
 
+#chat-toggle:hover {
+  transform:translate3d(0px,5px,15px);
+  box-shadow: none;
+}
 #chat-container {
   position: fixed;
   bottom: 25px;
@@ -45,9 +52,10 @@
 }
 
 .message-user {
-  background: #00c6ff;
+  background: hsla(193, 100%, 50%, 0.776);
   color: black;
   margin-left: auto;
+
 }
 
 .message-bot {
