@@ -27,7 +27,7 @@ export function DestinationInfo() {
 
 
                 const response = await axios.post('/api/generatePlaces', { destination });
-                console.log("Received response:", response.data);
+                console.table(response.data);
                 setPlacesData((r) => { r = response.data; return r; })
                 setTripContextAi(tripContext);
                 // console.log("placesData = ", placesData);
@@ -78,7 +78,7 @@ export function DestinationInfo() {
                         ) : (
                             
                             placesData.map((p, i) => {
-                                {console.log(placesData)}
+                                
                                 return (
                                     
 

@@ -1,14 +1,22 @@
+
 import './itinerary.css';
+// now we have to take input from api and maake the itinerary 
+// also need to make this page responsive 
 export function Itinerary(){
+
     const tripDetails = JSON.parse(localStorage.getItem('tripDetails'));
     console.table(tripDetails);
+
+
     return (
         <div className="itinerary-page">
             <div className="itinerary-box">
                 <h1>Your Itinerary</h1>
                 <div className="days">
-                    <span className="day-box clickable">D1</span>
-                    <span className="day-box clickable">D2</span>                       
+                    
+                    <span className="day-box clickable">Day 1</span>
+                    <span className="day-box clickable">Day 2</span>
+                    <span className="day-box clickable">Day 3</span>
                 </div>
 
                 <div className="itinerary-details">
@@ -24,11 +32,11 @@ export function Itinerary(){
                             </img>
                         <button className="arrows clickable">&gt;</button>
                     </span>
+                
 
                     
-
-                    <div className="details">helooo</div>
                 </div>
+                <div className="details"></div>
 
             </div>
         </div>
