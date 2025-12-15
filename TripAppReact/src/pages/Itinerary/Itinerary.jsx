@@ -1,4 +1,4 @@
-
+import {Header} from "../header/Header.jsx"
 import './itinerary.css';
 // now we have to take input from api and maake the itinerary 
 // also need to make this page responsive 
@@ -9,7 +9,9 @@ export function Itinerary(){
 
 
     return (
+        
         <div className="itinerary-page">
+            <Header />
             <div className="itinerary-box">
                 <h1>Your Itinerary</h1>
                 <div className="days">
