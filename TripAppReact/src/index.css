@@ -46,9 +46,9 @@ body, #root {
   cursor: pointer;
   transition: 0.25s;
 }
-.main-btn:hover {
+/* .main-btn:hover {
   background: #ffffff;
-}
+} */
 
 .close-btn {
   padding: 10px 20px;

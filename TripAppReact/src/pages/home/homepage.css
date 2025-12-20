@@ -16,6 +16,43 @@
   align-items: center;
   border-radius: 50px;
 }
+@keyframes blink {
+  0%   { opacity: 1; font-size: 1.5rem;}
+  50%  { opacity: 0.5;font-size: 1.3rem; }
+  100% { opacity: 1; font-size: 1.5rem;}
+}
+
+
+.press-to-start{
+  font-family: 'Alagard', serif;
+  font-weight: bolder;
+  color: aliceblue;
+  background: none;
+  border: none;
+
+  animation: blink 4.5s infinite;
+}
+
+
+.menuOptions{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+
+.menuOptions button{
+  font-family: 'Alagard', serif;
+  -webkit-text-stroke: 3px #362871;
+  font-size: 24px;
+  /* text-stroke: 3px #362871; */
+  paint-order: stroke fill;
+
+}
 
 .home-container {
   text-align: center;
@@ -33,8 +70,24 @@
 }
 
 #start-btn {
-  font-size: 1.3rem;
   padding: 14px 40px;
+}
+
+.main-btn{
+  background: none;
+  color:white;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+
+.main-btn:hover {
+  color: #fcbe00;
+  transform: translateX(10px);
+  position: relative;
+
+
+
+
 }
 
 
